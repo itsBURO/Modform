@@ -1,0 +1,15 @@
+<option value="Corralejo Blanco Tequila">Corralejo Blanco Tequila</option>
+<option value="Corralejo Reposado Tequila">Corralejo Reposado Tequila</option>
+<option value="DON ANGEL TEQUILA BLANCO">DON ANGEL TEQUILA BLANCO</option>
+<option value="Jose Cuervo Especial Tequila Reposado">Jose Cuervo Especial Tequila Reposado</option>
+<option value="Jose Cuervo Especial Tequila Silver">Jose Cuervo Especial Tequila Silver</option>
+<option value="La Chica Tequila Blanco">La Chica Tequila Blanco</option>
+<option value="La Chica Tequila Gold">La Chica Tequila Gold</option>
+<option value="Patron Silver Tequila">Patron Silver Tequila</option>
+<option value="Sauza Tequila Gold">Sauza Tequila Gold</option>
+<option value="Sauza Tequila Silver">Sauza Tequila Silver</option>
+<option value="Tequila Acapulco Gold">Tequila Acapulco Gold</option>
+<option value="Tequila Acapulco Silver">Tequila Acapulco Silver</option>
+<option value="Tequila Camino Real Blanco">Tequila Camino Real Blanco</option>
+<option value="Tequila Camino Real Gold">Tequila Camino Real Gold</option>
+<option value="Tequila Don Alejandro Blanco">Tequila Don Alejandro Blanco</option>

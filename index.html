@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Form</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\styles.css">
+    
+
+</head>
+<body>
+    <div class="container">
+      <div class="myCard">
+        <div class="row">
+          
+          <div class="col-md-6">
+            <div class="myLeftCtn">
+              <form action="/" method="POST" class="myForm text-center">
+                <header class="myHeader">Detail Form</header>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Age</label>
+                  <input type="number" class="form-control" id="Age" name="age" min="18" max="90" aria-describedby="emailHelp" placeholder="Enter your age" required>
+                </div>
+                <div class="form-group">
+                  <label for="Gender">Select Your Gender</label>
+                    <select class="form-control" id="gender" name="gender" required>
+                      <option value="" disabled selected>Choose your gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Prefer Not to Disclose</option>
+                    </select>
+                </div>
+                <header class="subhead">Select Your Preferences</header>
+                <div class="form-group">
+                  <label for="first-pref">Choose First Preference</label>
+                  <select class="form-control" id="firstPrefType1" name="firstPrefType1" required>
+                    <option value="" disabled selected>Select Your Alcohol Type</option>
+                    <option value="beer">Beer</option>
+                    <option value="whisky">Whiskey</option>
+                    <option value="rum">Rum</option>
+                    <option value="tequila">Tequila</option>
+                    <option value="vodka">Vodka</option>
+                    <option value="wine">Wine</option>
+                    <option value="gin">Gin</option>
+                    <option value="desi">Desi</option>
+                    <option value="brandy">Brandy</option>
+
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="alcoholName1" name="firstPrefName1" required>
+                    <option value="" disabled selected>Select Your Alcohol Name</option>
+                    
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="second-pref">Choose Second Preference</label>
+                  <select class="form-control" id="firstPrefType2" name="secondPrefType1" required>
+                    <option value="" disabled selected>Select Your Alcohol Type</option>
+                    <option value="beer">Beer</option>
+                    <option value="rum">Rum</option>
+                    <option value="whisky">Whiskey</option>
+                    <option value="tequila">Tequila</option>
+                    <option value="vodka">Vodka</option>
+                    <option value="wine">Wine</option>
+                    <option value="gin">Gin</option>
+                    <option value="desi">Desi</option>
+                    
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="alcoholName2" name="secondPrefName1" required>
+                    <option value="" disabled selected>Select Your Alcohol Name</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="third-pref">Choose Third Preference</label>
+                  <select class="form-control" id="firstPrefType3" name="thirdPrefType1" required>
+                    <option value="" disabled selected>Select Your Alcohol Type</option>
+                    <option value="beer">Beer</option>
+                    <option value="rum">Rum</option>
+                    <option value="whisky">Whiskey</option>
+                    <option value="tequila">Tequila</option>
+                    <option value="vodka">Vodka</option>
+                    <option value="wine">Wine</option>
+                    <option value="gin">Gin</option>
+                    <option value="desi">Desi</option>
+                    
+
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="alcoholName3" name="thirdPrefName1" required>
+                    <option value="" disabled selected>Select Your Alcohol Name</option>
+                  </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" id="Submit">Submit Details</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="myRightCtn">
+            <div class="box">
+              <header>What's This?</header>
+              <p>This is a form for collecting user data. We are doing it to make a dataset for our Liquor Recommender System. 
+              </p>
+              <header>Who are We?</header>
+              <p>Bunch of jobless peeps making something to show off on our CVs :P <span></span>
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <script src="app.js"></script>
+   <script>
+            $("#firstPrefType1").change(function () { 
+            $("#alcoholName1").load("textdata\\" + $(this).val() + ".txt");
+            
+        });
+        $("#firstPrefType2").change(function () { 
+            $("#alcoholName2").load("textdata\\" + $(this).val() + ".txt");
+            
+        });
+        $("#firstPrefType3").change(function () { 
+            $("#alcoholName3").load("textdata\\" + $(this).val() + ".txt");
+        });
+
+ 
+
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+*{
+  margin:0%;
+  padding:0%;
+  box-sizing: border-box;
+  font-family: 'Courier Prime', monospace;
+}
+body{
+  background:#ffc478;
+  
+}
+.container{
+  position: absolute;
+  max-width: 800px;
+  min-width: 450px;
+  height:600px;
+  margin: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.myRightCtn{
+  position: relative;
+  height: 400px;
+  padding: 25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+ 
+  
+}
+.myLeftCtn{
+  position: relative;
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.8),rgba(255,255,255,0.2));
+  height: 100%;
+  padding: 25px;
+  padding-left: 20px;
+  border-radius: 25px;
+
+}
+.myHeader{
+  
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.row{
+  height: 100%;
+}
+.subhead{
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.myRightCtn header{
+  font-size: 30px;
+  font-weight: 800;
+
+}
+.myRightCtn p{
+  font-size: 20px;
+  font-weight: 200;
+
+}
+.box{
+  position: relative;
+  margin: 20px;
+  margin-bottom: 100px;
+  height: 300px;
+  
+}
+.btn{
+ border-radius: 10px;
+ background-color: brown;
+}
+
+.hero{
+  max-width: 100%;
+  min-width: 450px;
+  margin-left: 15px;
+}
+.hero header{
+  font-size: 44px;
+  font-weight: 800;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+span{
+  content: '\1F61B';
+}
